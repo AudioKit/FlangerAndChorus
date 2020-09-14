@@ -46,6 +46,11 @@ class Conductor {
 
         // Signal Chain
         oscillator = AKSynth()
+
+        oscillator.masterVolume = 0.3
+        oscillator.attackDuration = 0.1
+        oscillator.releaseDuration = 0.5
+
         flanger = AKFlanger(oscillator)
         chorus = AKChorus(flanger)
 
